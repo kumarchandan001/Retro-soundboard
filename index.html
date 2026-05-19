@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Retro Indian TV Soundboard</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Retro Indian TV Soundboard</h1>
+        <p>A nostalgic trip down memory lane</p>
+    </header>
+
+    <main>
+
+        <section class="controls-container">
+            <div class="control-group">
+                <label for="search-box">Search Sounds:</label>
+                <input type="text" id="search-box" placeholder="Type to filter...">
+            </div>
+            
+            <div class="control-group">
+                <label for="volume-slider">Volume:</label>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+            </div>
+
+            <button id="stop-all-btn" class="control-btn">STOP ALL SOUNDS</button>
+        </section>
+
+        <section class="now-playing-container">
+            <h2>Now Playing:</h2>
+            <div id="now-playing-display">--</div>
+        </section>
+
+        <div id="soundboard-grid">
+            
+            <section class="sound-category">
+                <h2>Theme Songs</h2>
+                <div class="button-group">
+                    <button class="btn" data-sound="malgudi">Malgudi Days</button>
+                    <button class="btn" data-sound="mahabharat_sad">Mahabharat</button>
+                    <button class="btn" data-sound="byomkesh">Byomkesh Bakshi</button>
+                    <button class="btn" data-sound="junglebook">Jungle Book</button>
+                </div>
+            </section>
+            
+            <section class="sound-category">
+                <h2>Famous Dialogues</h2>
+                <div class="button-group">
+                    <button class="btn" data-sound="shaktimaan_theme">"Sorry Shaktimaan"</button>
+                    <button class="btn" data-sound="mogambo">"Mogambo Khush Hua"</button>
+                </div>
+            </section>
+            
+            <section class="sound-category">
+                <h2>Sound Effects</h2>
+                <div class="button-group">
+                    <button class="btn" data-sound="doordarshan">Doordarshan Tune</button>
+                </div>
+            </section>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Created with ❤️ in Bengaluru.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
